@@ -72,7 +72,7 @@
     <div class="body-container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>2DGS</b>: MVG-Splatting: Multi-View Guided Gaussian Splatting with Adaptive Quantile-Based Geometric Consistency Densification </br>
+                <b> MVG-Splatting</b>: Multi-View Guided Gaussian Splatting with Adaptive Quantile-Based Geometric Consistency Densification </br>
 
             </h2>
         </div>
@@ -159,7 +159,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
                 2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br> 
-                <span style="color:#DF62D3; font-size: 18px;"><b>Use the slider as the "splatter"</b></span>
+               
                 </p>
 			</div>
         </div>
@@ -171,14 +171,14 @@
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
                 2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br>
-                <span style="color:#DF62D3; font-size: 18px;"><b>Use the slider as the "splatter"</b></span>
+               
                 </p>
 			</div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <video class="video" width="100%" id="teaser3" loop playsinline autoplay muted src="video/teaser3.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="teaser3Merge"></canvas>
+               
 			</div>
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
@@ -194,26 +194,12 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    3D Gaussian Splatting (3DGS) has recently revolutionized radiance field reconstruction, 
-                    achieving high quality novel view synthesis and fast rendering speed without baking. 
-                    However, 3DGS fails to accurately represent surfaces due to the multi-view inconsistent 
-                    nature of 3D Gaussians. We present 2D Gaussian Splatting (2DGS), a novel approach to model 
-                    and reconstruct geometrically accurate radiance fields from multi-view images. 
-                    Our key idea is to collapse the 3D volume into a set of 
-                    2D oriented planar Gaussian disks. Unlike 3D Gaussians, 2D Gaussians provide view-consistent 
-                    geometry while modeling surfaces intrinsically. 
-                    To accurately recover thin surfaces and achieve stable optimization, 
-                    we introduce a perspective-accurate 2D splatting process utilizing ray-splat 
-                    intersection and rasterization. Additionally, we incorporate depth distortion 
-                    and normal consistency terms to further enhance the quality of the reconstructions. 
-                    We demonstrate that our differentiable renderer allows for noise-free and detailed geometry 
-                    reconstruction while maintaining competitive appearance quality, 
-                    fast training speed, and real-time rendering.
+                    In the rapidly evolving field of 3D reconstruction, 3D Gaussian Splatting (3DGS) and 2D Gaussian Splatting (2DGS) represent significant advancements. While 2DGS compressed 3D Gaussian primitives into 2D Gaussian surfels effectively enhances the quality of mesh extraction, it can lead to a decrease in rendering quality. Additionally, unreliable densification processes and the calculation of depth through the accumulation of opacity can compromise the detail of mesh extraction. To address this issue, we introduce MVG-Splatting, a solution guided by Multi-View considerations. Specifically, we integrate an optimized method for calculating normals, which, combined with image gradients, helps rectify inconsistencies in the original depth computations. Additionally, utilizing projection strategies akin to those in Multi-View Stereo (MVS), we propose an adaptive quantile-based method that dynamically determines the level of additional densification guided by depth maps, from coarse to fine detail. Experimental evidence demonstrates that our method not only resolves the issues of rendering quality degradation caused by depth discrepancies but also facilitates direct mesh extraction from dense Gaussian point clouds using the Marching Cubes algorithm. This approach significantly enhances the overall fidelity and accuracy of the 3D reconstruction process, ensuring that both the geometric details and visual quality.
                 </p>
             </div>
         </div>
 
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Paper Fast Forward
@@ -224,9 +210,9 @@
                     </video>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Video
@@ -238,9 +224,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row comp-margin">
+<!--         <div class="row comp-margin">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Geometry Reconstruction
@@ -255,8 +241,8 @@
                         <source src="./video/2dgs_vs_3dgs.mp4" type="video/mp4" />
                     </video>
                 </div>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
+            </div> -->
+<!--             <div class="col-md-8 col-md-offset-2">
                 <h4>
                     Our textured mesh
                 </h4>
@@ -323,7 +309,7 @@
                 <video class="video" id="comp1" loop playsinline autoplay muted src="video/comp_counter.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
                 <canvas height=0 class="videoMerge" id="comp1Merge"></canvas>
             </div> -->
-        </div>
+<!--         </div> --> -->
 
 
 
