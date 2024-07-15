@@ -98,13 +98,13 @@
             <div class="col-md-6 col-md-offset-3 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="https://arxiv.org/abs/2403.17888">
+                        <a href="">
                             <img src="assets/paper/paper.png"  height="60px" />
                                 <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=oaHCtB6yiKU">
+                        <a href="">
                             <img src="assets/img/bog/youtube_icon.png" style="border: none;" height="60px" />
                                 <h4><strong>Video</strong></h4>
                         </a>
@@ -129,6 +129,11 @@
         <div class="row">
     <div class="col-md-6">
         <video class="video" width="100%" id="teaser" loop playsinline autoplay muted src="video/render_traj_color.mp4"></video>
+        onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+                <canvas height=0 class="videoMerge" id="teaserMerge"></canvas>
+			</div>
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-center">
         <p class="text-center">MVG-Splatting can achieve more fidelity rendering results.</p>
     </div>
     <div class="col-md-6">
