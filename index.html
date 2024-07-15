@@ -11,22 +11,7 @@
         content="Multi-View Guided Gaussian Splatting with Adaptive Quantile-Based Geometric Consistency Densification">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--FACEBOOK-->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mvgsplatting.github.io" />
-<!--     <meta property='og:video' content="https://www.youtube.com/watch?v=oaHCtB6yiKU" /> -->
-    <meta property="og:title" content="2D Gaussian Splatting" />
-    <meta property="og:description"
-        content="Multi-View Guided Gaussian Splatting with Adaptive Quantile-Based Geometric Consistency Densification" />
-
-    <!--TWITTER-->
-    <meta name="twitter:card" content="player" />
-    <meta name="twitter:title" content="2D Gaussian Splatting" />
-    <meta name="twitter:description"
-        content="Project page for 2D Gaussian Splatting for Geometrically Accurate Radiance Fields">
-    <meta name="twitter:player" content="https://www.youtube.com/watch?v=oaHCtB6yiKU" />
-    <meta name="twitter:player:width" content="640">
-    <meta name="twitter:player:height" content="360">
+    
 
     <link rel="icon" href="/paint.png">
     <!-- Place favicon.ico in the root directory -->
@@ -125,23 +110,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/hbb1/2d-gaussian-splatting">
+                        <a href="">
                         <img src="assets/img/bog/github_pad.png" height="60px" />
-                            <h4><strong>Code</strong></h4>
+                            <h4><strong>Code (Coming Soon)</strong></h4>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://colab.research.google.com/drive/1qoclD7HJ3-o0O1R8cvV3PxLhoDCMsH8W?usp=sharing">
-                        <img src="assets/img/bog/colab.png" height="60px" />
-                            <h4><strong>Demo</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/drive/folders/1SJFgt8qhQomHX55Q4xSvYE2C6-8tFll9?usp=drive_link">
-                        <img src="assets/img/bog/google-drive.png" height="60px" />
-                            <h4><strong>Data</strong></h4>
-                        </a>
-                    </li>
+                    
+                    
                 </ul>
             </div>
         </div>
@@ -152,29 +127,15 @@
 
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <video class="video" width="100%" id="teaser" loop playsinline autoplay muted src="video/render_traj_color.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="teaserMerge"></canvas>
-			</div>
-            <div class="col-md-8 col-md-offset-2">
-                <p class="text-center">
-                2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br> 
-               
-                </p>
-			</div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <video class="video" width="100%" id="teaser2" loop playsinline autoplay muted src="video/render_traj_normal.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="teaser2Merge"></canvas>
-			</div>
-            <div class="col-md-8 col-md-offset-2">
-                <p class="text-center">
-                2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br>
-               
-                </p>
-			</div>
-        </div>
+    <div class="col-md-6">
+        <video class="video" width="100%" id="teaser" loop playsinline autoplay muted src="video/render_traj_color.mp4"></video>
+        <p class="text-center">MVG-Splatting can achieve more fidelity rendering results.</p>
+    </div>
+    <div class="col-md-6">
+        <video class="video" width="100%" id="teaser2" loop playsinline autoplay muted src="video/render_traj_normal.mp4"></video>
+        <p class="text-center">MVG-Splatting can achieve more fidelity rendering results.</p>
+    </div>
+</div>
         
         </div>
 
